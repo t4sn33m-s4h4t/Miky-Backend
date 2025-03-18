@@ -6,9 +6,9 @@ const cors = require('cors');
 const cookieParser = require('cookie-parser');
 const mongoSanitize = require('express-mongo-sanitize');
 const path = require("path");
-const userRouter = require('./routes/userRoutes');
+const userRouter = require("./Routes/userRoutes");
 const globalErrorHandler = require('./Controllers/errorController');
-const postRouter = require("./routes/postRoutes") 
+const postRouter = require("./Routes/postRoutes");
 
 
 const App = express();
