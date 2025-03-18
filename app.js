@@ -1,4 +1,3 @@
-const globalErrorHandler = require('./controllers/errorController');
 const express  = require('express');
 const app = express(); 
 const morgan = require('morgan');
@@ -8,6 +7,7 @@ const cookieParser = require('cookie-parser');
 const mongoSanitize = require('express-mongo-sanitize');
 const path = require("path");
 const userRouter = require('./routes/userRoutes');
+const globalErrorHandler = require('./Controllers/errorController');
 const postRouter = require("./routes/postRoutes") 
 
 
