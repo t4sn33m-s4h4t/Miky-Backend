@@ -1,4 +1,4 @@
-const AppError = require("../utils/AppError");
+const AppError = require("../utils/appError");
 const catchAsync = require("../utils/cathcAsync");
 const { uploadToCloudinary } = require("../utils/cloudinary");
 const User = require("../Models/userModel");
