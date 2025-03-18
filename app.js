@@ -16,7 +16,10 @@ App.use("/", express.static("uploads"));
 App.use(cookieParser());
 App.use(helmet());
 App.use(cors({
-    origin:["http://localhost:3000"],
+    origin:[
+        "http://localhost:3000",
+        "https://miky-frontend.vercel.app",
+    ],
     credentials:true,
 }
 ));
