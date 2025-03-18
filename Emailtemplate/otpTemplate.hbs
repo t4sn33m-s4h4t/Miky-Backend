@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Miky - OTP Verification</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #FAE3C6; 
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width:600px;
+            margin: 20px auto;
+            background: #A67B5B; 
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            color: #fff; 
+        }
+        .header {
+            text-align: center;
+            background: #5D4037; 
+            padding: 15px;
+            border-radius: 8px 8px 0 0;
+        }
+        h1 {
+            margin: 0;
+            font-size: 24px;
+            color: #FAE3C6; 
+        }
+        p {
+            font-size: 16px;
+            color: #fff; 
+        }
+        .otp {
+            font-size: 24px;
+            font-weight: bold;
+            color: #FFDDC1; 
+            margin: 20px 0 5px 0;
+            text-align: center;
+        }
+ 
+        .footer {
+            margin-top: 5px;
+            font-size: 8px;
+            color: #a3927d; 
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>{{title}}</h1>
+        </div>
+        <p>Hello, <strong>{{username}}</strong></p>
+        <p>{{message}}</p>
+        <div class="otp">{{otp}}</div>
+        <p>If you didn’t request this, just ignore this email.</p> 
+        <div class="footer">
+            <p>Thank you for using our services.</p>
+        </div>
+    </div>
+</body>
+</html>
